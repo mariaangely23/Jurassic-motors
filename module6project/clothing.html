@@ -1,0 +1,156 @@
+<!--
+    Jurassic Motors Website
+    Code written by Maria Hernandez
+
+    References / Resources Used:
+    - W3Schools HTML & CSS Documentation: https://www.w3schools.com/
+    - MDN Web Docs (Mozilla Developer Network): https://developer.mozilla.org/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jurassic Motors</title>
+    <link rel="stylesheet" type="text/css" href="module6project.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="topbar">
+            <img src="Dino.png" alt="Jurassic Motors Logo" class="logo">
+
+            <div class="topbar-middle">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="vehicles.html">Vehicles</a></li>
+                        <li><a href="clothing.html">Clothing</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="topbar-right">
+                <p>Call Us: (505) 555‑1234</p>
+                <p>Open: Mon-Sat 9:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+    </header>
+    <section class="js-dynamic-section">
+
+        <h2>Exclusive Clothing Discount</h2>
+        <p>Enter your email to receive a special 20% off code!</p>
+
+        <label for="emailInput">Email:</label>
+        <input type="text" id="emailInput" placeholder="Enter your email">
+
+        <button id="generateBtn" type="button">Get My Discount Code</button>
+
+        <p id="discountMessage"></p>
+
+        <button id="copyBtn" style="display:none;">Copy Code</button>
+
+        <p id="countdownText"></p>
+
+        <canvas id="confettiCanvas"></canvas>
+
+    </section>
+
+    <script src="clothing.js"></script>
+
+
+    <div class="clothing-container">
+        <h1 class="page-title">Clothing</h1>
+        <div class="divider"></div>
+        <p class="center-paragraph"><em>FIND YOUR STYLE</em></p>
+        <h1><strong>CLOTHING STYLE</strong></h1>
+    </div>
+
+    <div class="clothing-layout">
+
+        <div class="clothing-stack">
+            <div class="clothing-card">Hoodie</div>
+            <div class="clothing-card">Joggers</div>
+            <div class="clothing-card">T‑Shirt</div>
+            <div class="clothing-card">Hats</div>
+        </div>
+
+        <div class="clothing-images">
+            <div class="image-card">
+                <img src="hoodie.png" class="square-img">
+
+                <div class="size-selector">
+                    <div class="size-box">XS</div>
+                    <div class="size-box">S</div>
+                    <div class="size-box">M</div>
+                    <div class="size-box">L</div>
+                    <div class="size-box">XL</div>
+                    <div class="size-box">XXL</div>
+                    <div class="size-box">XXXL</div>
+                </div>
+
+                <div class="price-box">$39.99</div>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+            <div class="image-card">
+                <img src="joggers.png" class="square-img">
+
+                <div class="size-selector">
+                    <div class="size-box">XS</div>
+                    <div class="size-box">S</div>
+                    <div class="size-box">M</div>
+                    <div class="size-box">L</div>
+                    <div class="size-box">XL</div>
+                    <div class="size-box">XXL</div>
+                    <div class="size-box">XXXL</div>
+                </div>
+
+                <div class="price-box">$39.99</div>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="clothing-extra">
+            <div class="image-card">
+                <img src="t-shirt.png" class="square-img">
+
+                <div class="size-selector">
+                    <div class="size-box">XS</div>
+                    <div class="size-box">S</div>
+                    <div class="size-box">M</div>
+                    <div class="size-box">L</div>
+                    <div class="size-box">XL</div>
+                    <div class="size-box">XXL</div>
+                    <div class="size-box">XXXL</div>
+                </div>
+
+                <div class="price-box">$24.99</div>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="clothing-extra">
+            <div class="image-card">
+                <img src="hats.png" class="square-img">
+
+                <div class="size-selector">
+                    <div class="size-box">XS</div>
+                    <div class="size-box">S</div>
+                    <div class="size-box">M</div>
+                    <div class="size-box">L</div>
+                    <div class="size-box">XL</div>
+                    <div class="size-box">XXL</div>
+                    <div class="size-box">XXXL</div>
+                </div>
+
+                <div class="price-box">$24.99</div>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

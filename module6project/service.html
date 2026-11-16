@@ -1,0 +1,108 @@
+<!--
+    Jurassic Motors Website
+    Code written by Maria Hernandez
+
+    References / Resources Used:
+    - W3Schools HTML & CSS Documentation: https://www.w3schools.com/
+    - MDN Web Docs (Mozilla Developer Network): https://developer.mozilla.org/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jurassic Motors</title>
+    <link rel="stylesheet" type="text/css" href="module6project.css">
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <img src="Dino.png" alt="Jurassic Motors Logo" class="logo">
+
+            <div class="topbar-middle">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="vehicles.html">Vehicles</a></li>
+                        <li><a href="clothing.html">Clothing</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="topbar-right">
+                <p>Call Us: (505) 555‑1234</p>
+                <p>Open: Mon-Sat 9:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+    </header>
+    <h1 class="page-title">Service</h1>
+    <div class="divider"></div>
+    <p class="center-paragraph"><em>KEEP YOUR RIDE ROARING</em></p>
+    <div class="divider1"></div>
+
+    <div class="s-layout">
+
+        <!-- Oil Change -->
+        <div class="service-images">
+            <div class="image-card">
+                <img src="oilchange.png" class="square-img">
+                <div class="service-name">Oil Change</div>
+            </div>
+            <button class="book-now" onclick="bookService('Oil Change')">BOOK NOW</button>
+        </div>
+
+        <!-- Diagnostics -->
+        <div class="service-images">
+            <div class="image-card">
+                <img src="diagnostic.png" class="square-img">
+                <div class="service-name">Diagnostics</div>
+            </div>
+            <button class="book-now" onclick="bookService('Diagnostics')">BOOK NOW</button>
+        </div>
+
+        <!-- Detailing -->
+        <div class="service-images">
+            <div class="image-card">
+                <img src="detailing.png" class="square-img">
+                <div class="service-name">Detailing</div>
+            </div>
+            <button class="book-now" onclick="bookService('Detailing')">BOOK NOW</button>
+        </div>
+
+    </div>
+
+    <div class="divider1"></div>
+
+    <h1><strong>SCHEDULE AN APPOINTMENT</strong></h1>
+
+    <form id="appointmentForm" class="service-stack">
+
+        <input type="text" class="form-input" id="name" placeholder="Your Name">
+        <input type="number" class="form-input" id="year" placeholder="Vehicle Year">
+        <input type="text" class="form-input" id="model" placeholder="Model">
+        <input type="date" class="form-input" id="date">
+
+        <select class="form-select" id="service">
+            <option selected disabled>Select Service</option>
+            <option>Oil Change</option>
+            <option>Diagnostics</option>
+            <option>Detailing</option>
+        </select>
+
+        <button type="submit" class="submit-btn">Submit</button>
+
+    </form>
+
+    <div class="divider1"></div>
+
+
+    <h1><strong>CUSTOMER REVIEWS</strong></h1>
+    <div class="reviews-row">
+        <img src="review1.png" alt="Jurassic Motors Review 1" class="review-img">
+        <img src="review2.png" alt="Jurassic Motors Review 2" class="review-img">
+    </div>
+    <script src="service.js"></script>
+
+</body>
+</html>
